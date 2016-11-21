@@ -37,7 +37,7 @@ app.intent('SwitchInputIntent',
   },
   function(request,response) {
     var value1 = request.slot('InputType');
-    response.say("You asked for the number "+value1);
+    response.say(value1 + " " +"is now selected ");
   }
 );
 
