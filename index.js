@@ -42,9 +42,9 @@ app.intent('SwitchInputIntent',
   }
 );
 
-//module.exports = value1 + app;
+module.exports = value1 + app;
 //module.exports = app;
 // Also try context.succeed();
 // Also try to server an html page with alexa's data
-module.exports = value1;
+//module.exports = value1;
 
