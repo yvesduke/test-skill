@@ -1,0 +1,26 @@
+{
+  "name": "test-skill",
+  "version": "1.0.0",
+  "description": "Test skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvesduke/test-skill.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Yves Dukuze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yvesduke/test-skill/issues"
+  },
+  "homepage": "https://github.com/yvesduke/test-skill#readme",
+  "dependencies": {
+    "alexa-app": "^2.3.4"
+  },
+  "devDependencies": {}
+}
