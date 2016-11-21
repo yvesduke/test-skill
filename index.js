@@ -6,7 +6,7 @@ var app = new alexa.app( 'test-skill' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to your test skill' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
+	response.say( 'Welcome to Couture Digital' ).reprompt( 'You can ask hom to turn on tv or switch on lights.' ).shouldEndSession( false );
 } );
 
 
@@ -29,6 +29,15 @@ app.intent('sayNumber',
   function(request,response) {
     var number = request.slot('number');
     response.say("You asked for the number "+number);
+  }
+);
+
+app.intent('SwitchInputIntent',
+  {
+  },
+  function(request,response) {
+    var value1 = request.slot('InputType');
+    response.say("You asked for the number "+value1);
   }
 );
 
