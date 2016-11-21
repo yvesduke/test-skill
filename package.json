@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/yvesduke/test-skill#readme",
   "dependencies": {
-    "alexa-app": "^2.3.4"
+    "alexa-app": "^2.3.4",
+    "ws": "^1.1.1"
   },
   "devDependencies": {}
 }

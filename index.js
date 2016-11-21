@@ -5,6 +5,26 @@ var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
 var value1;
 
+var WebSocketServer = require("ws").Server;
+var wss = new WebSocketServer({port:3000});
+
+/*wss.on("connection", function(ws){
+	
+	ws.on("message", function(message){
+		
+		wss.clients.forEach(function(client){
+			client.send(value1);
+		});
+		
+	});*/
+	wss.clients.forEach(function(client){
+		client.send(value1);
+	});
+	
+	
+	ws.send("Welcome to Couture chat" + value1);
+});
+
 
 app.launch( function( request, response ) {
 	response.say( 'Welcome to Couture Digital' ).reprompt( 'You can ask hom to turn on tv or switch on lights.' ).shouldEndSession( false );
@@ -48,7 +68,7 @@ app.intent('SwitchInputIntent',
 // Also try to server an html page with alexa's data
 //module.exports = value1;
 
-exports.handler = function(event, context){
+/*exports.handler = function(event, context){
     context.done(null, {"hello":"world, This is Yves"});
-};
+};*/
 
