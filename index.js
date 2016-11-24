@@ -5,7 +5,7 @@ var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
 //var value1;
 //GLOBAL.x= value1;
-GLOBAL.x;
+global.x;
 
 /*var WebSocketServer = require("ws").Server;
 var wss = new WebSocketServer({port:3000});
