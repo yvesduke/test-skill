@@ -4,6 +4,7 @@ module.change_code = 1;
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
 var value1;
+GLOBAL.x= value1;
 
 /*var WebSocketServer = require("ws").Server;
 var wss = new WebSocketServer({port:3000});
@@ -62,7 +63,7 @@ app.intent('SwitchInputIntent',
   }
 );
  module.exports = app;
- exports.value1 = value1;
+ //exports.value1 = value1;
 // Also try to server an html page with alexa's data
 
 
