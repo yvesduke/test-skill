@@ -4,7 +4,6 @@ module.change_code = 1;
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
 var value1;
-global.__base = __dirname + '/';
 
 /*var WebSocketServer = require("ws").Server;
 var wss = new WebSocketServer({port:3000});
