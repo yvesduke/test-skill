@@ -5,7 +5,7 @@ var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
 var value1;
 
-var WebSocketServer = require("ws").Server;
+/*var WebSocketServer = require("ws").Server;
 var wss = new WebSocketServer({port:3000});
 
 /*wss.on("connection", function(ws){
@@ -17,13 +17,13 @@ var wss = new WebSocketServer({port:3000});
 		});
 		
 	});*/
-	wss.clients.forEach(function(client){
+	/*wss.clients.forEach(function(client){
 		client.send(value1);
 	});
 	
 	
 	ws.send("Welcome to Couture chat" + value1);
-});
+}); */
 
 
 app.launch( function( request, response ) {
@@ -61,12 +61,10 @@ app.intent('SwitchInputIntent',
     response.say(value1 + " " +"is now selected ");
   }
 );
-
-//module.exports = value1 + app;
  module.exports = app;
-// Also try context.succeed();
+ exports.value1 = value1;
 // Also try to server an html page with alexa's data
-//module.exports = value1;
+
 
 /*exports.handler = function(event, context){
     context.done(null, {"hello":"world, This is Yves"});
