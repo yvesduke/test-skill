@@ -3,7 +3,8 @@ module.change_code = 1;
 
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
-value1;
+var value1;
+available = value1;
 
 
 /*var WebSocketServer = require("ws").Server;
