@@ -4,7 +4,8 @@ module.change_code = 1;
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
 var value1;
-available = value1;
+var testval = "xbox is now selected";
+available = testval;
 
 
 /*var WebSocketServer = require("ws").Server;
