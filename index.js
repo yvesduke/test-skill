@@ -3,6 +3,7 @@ module.change_code = 1;
 
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
+var available;
 //var value1 = "input";
 //var testval = "xbox is now selected" + value1;
 //available = testval;
@@ -66,7 +67,6 @@ app.intent('SwitchInputIntent',
   {
   },
   function(request,response) {
-	var available;
     available = request.slot('InputType');
     response.say(available + " " +"is now selected ");
   }
