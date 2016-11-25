@@ -62,11 +62,12 @@ app.intent('SwitchInputIntent',
   function(request,response) {
     var value1 = request.slot('InputType');
     response.say(value1 + " " +"is now selected ");
+	var testval = "xbox is now selected" + value1;
+    available = testval;
   }
 );
 
-var testval = "xbox is now selected" + value1;
-available = testval;
+
 
 module.exports = app;
  
