@@ -8,7 +8,7 @@ var app = new alexa.app( 'test-skill' );
 //available = testval;
 //var value1;
 
-available ="";
+
 
 
 
@@ -65,15 +65,13 @@ app.intent('SwitchInputIntent',
   {
   },
   function(request,response) {
-	 if(available){ 
     available = request.slot('InputType');
     response.say(available + " " +"is now selected ");
-	}
   }
 );
 
 //var testval = "xbox is now selected" + value1;
-available = available;
+
 
 module.exports = app;
  
