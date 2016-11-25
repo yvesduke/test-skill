@@ -3,7 +3,7 @@ module.change_code = 1;
 
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
-var value1;
+var value1 = "input";
 var testval = "xbox is now selected" + value1;
 available = testval;
 //var value1;
