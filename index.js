@@ -7,7 +7,6 @@ var app = new alexa.app( 'test-skill' );
 //var testval = "xbox is now selected" + value1;
 //available = testval;
 //var value1;
-var available ="input";
 
 
 
