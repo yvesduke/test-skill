@@ -67,7 +67,8 @@ app.intent('SwitchInputIntent',
   }
 );
  module.exports = app;
- exports.value1 = value1;
+ module.exports = value1;
+ //exports.value1 = value1;
 // Also try to server an html page with alexa's data
 
 
