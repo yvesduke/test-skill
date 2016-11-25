@@ -3,10 +3,10 @@ module.change_code = 1;
 
 var alexa = require( 'alexa-app' );
 var app = new alexa.app( 'test-skill' );
-//var value1;
+var value1;
 //var testval = "xbox is now selected";
 //available = value1;
-value1;
+//value1;
 
 
 
@@ -67,7 +67,7 @@ app.intent('SwitchInputIntent',
   }
 );
  module.exports = app;
- //exports.value1 = value1;
+ exports.value1 = value1;
 // Also try to server an html page with alexa's data
 
 
