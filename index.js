@@ -66,7 +66,7 @@ app.intent('SwitchInputIntent',
   {
   },
   function(request,response) {
-	available;
+	var available;
     available = request.slot('InputType');
     response.say(available + " " +"is now selected ");
   }
