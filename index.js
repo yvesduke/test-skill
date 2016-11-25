@@ -66,11 +66,12 @@ app.intent('SwitchInputIntent',
     response.say(value1 + " " +"is now selected ");
   }
 );
- module.exports = {
-	app, 
-	value1
- }; 
- 
+
+var exports = module.exports = {};
+
+	exports.app = app; 
+	exports. value1 = value1;
+
  
  //module.exports = value1;
  //exports.value1 = value1;
