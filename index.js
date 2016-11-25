@@ -66,8 +66,13 @@ app.intent('SwitchInputIntent',
     response.say(value1 + " " +"is now selected ");
   }
 );
- //module.exports = app;
- module.exports = value1;
+ module.exports = {
+	app, 
+	value1
+ }; 
+ 
+ 
+ //module.exports = value1;
  //exports.value1 = value1;
 // Also try to server an html page with alexa's data
 
